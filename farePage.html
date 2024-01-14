@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fare Page</title>
+</head>
+<body>
+
+<script>
+    // Fetch the JSON file
+    fetch('taxi_data.json')
+        .then(response => response.json())
+        .then(data => {
+            // Process the JSON data
+            console.log(data);
+
+            // Example: Display the content in the HTML body
+            document.body.innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+        })
+        .catch(error => console.error('Error fetching the JSON file:', error));
+</script>
+
+</body>
+</html>

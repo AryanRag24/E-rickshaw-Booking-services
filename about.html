@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(3, 19, 50);
+        }
+
+        .profile-container {
+            display: flex;
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            transition: box-shadow 0.3s ease-in-out;
+            border-radius: 20px;
+        }
+
+        .profile-container:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.862);
+        }
+
+        .profile-left {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .profile-right {
+            flex: 1;
+            overflow: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        nav {
+            background-color:rgb(14, 26, 70);;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+
+        }
+        .abtus{
+            font-family: 'Pacifico', cursive;
+            color: white;
+            font-weight: bold;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p class="abtus">About Us<p>
+    </nav>
+
+<div class="profile-container">
+    <div class="profile-left">
+        <h1>Ambreesh Srivastava</h1>
+        <p>
+            Enthusiastic in competetive coding,web development,software designing.
+            <br>
+            Achievements:
+           <ul>JPMorgan Chase & Co. intern '24</ul>
+           <ul>Participated in Code for Good 2023</ul>
+           <ul>Campus Ambassador of thapar for IIM lucknow</ul>
+        </p>
+    </div>
+    <div class="profile-right">
+        <img src="Amsterdam.jpg" alt="Profile Picture" height="200px" width="400px">
+    </div>
+</div>
+
+<div class="profile-container">
+    <div class="profile-left">
+        <h1>Aryan Raghuwanshi</h1>
+        <p>
+         You need people like me.
+
+           I specialise in the following:
+           <ul>Public Speaking</ul>
+           <ul>Frontend Development</ul>
+           <ul>Machine Learning</ul>
+        </p>
+    </div>
+    <div class="profile-right">
+        <img src="aryan.jpg" alt="Profile Picture">
+    </div>
+</div>
+
+</body>
+</html>
